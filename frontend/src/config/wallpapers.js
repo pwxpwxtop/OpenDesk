@@ -1,0 +1,127 @@
+// 远程桌面内置壁纸，使用纯 CSS 渐变，避免额外资源文件。
+export const DEFAULT_WALLPAPER_ID = 'midnight'
+
+export const WALLPAPERS = [
+  {
+    id: 'midnight',
+    name: '极夜蓝',
+    background: `radial-gradient(1100px 620px at 12% 6%, rgba(79, 140, 255, 0.22), transparent 62%),
+      radial-gradient(900px 540px at 88% 18%, rgba(168, 85, 247, 0.16), transparent 60%),
+      radial-gradient(1000px 700px at 62% 96%, rgba(34, 211, 238, 0.12), transparent 62%),
+      linear-gradient(150deg, #0a1020 0%, #101a2e 48%, #1b2440 100%)`,
+  },
+  {
+    id: 'aurora',
+    name: '极光',
+    background: `radial-gradient(900px 520px at 18% 10%, rgba(16, 185, 129, 0.28), transparent 60%),
+      radial-gradient(1000px 600px at 82% 30%, rgba(34, 211, 238, 0.22), transparent 62%),
+      radial-gradient(900px 620px at 40% 96%, rgba(59, 130, 246, 0.2), transparent 60%),
+      linear-gradient(155deg, #04120f 0%, #08201f 46%, #0b2a33 100%)`,
+  },
+  {
+    id: 'embers',
+    name: '余烬',
+    background: `radial-gradient(900px 560px at 14% 12%, rgba(251, 146, 60, 0.3), transparent 60%),
+      radial-gradient(1000px 620px at 86% 22%, rgba(244, 63, 94, 0.24), transparent 62%),
+      radial-gradient(900px 640px at 48% 98%, rgba(168, 85, 247, 0.18), transparent 60%),
+      linear-gradient(150deg, #1a0b10 0%, #2a1119 46%, #35161f 100%)`,
+  },
+  {
+    id: 'violet',
+    name: '紫罗兰',
+    background: `radial-gradient(1000px 600px at 16% 8%, rgba(139, 92, 246, 0.3), transparent 60%),
+      radial-gradient(900px 560px at 84% 24%, rgba(236, 72, 153, 0.22), transparent 62%),
+      radial-gradient(900px 620px at 50% 100%, rgba(59, 130, 246, 0.18), transparent 60%),
+      linear-gradient(150deg, #0d0a1a 0%, #171029 48%, #221437 100%)`,
+  },
+  {
+    id: 'ocean',
+    name: '深海',
+    background: `radial-gradient(1100px 640px at 10% 14%, rgba(14, 165, 233, 0.26), transparent 62%),
+      radial-gradient(900px 560px at 90% 28%, rgba(6, 182, 212, 0.2), transparent 60%),
+      radial-gradient(900px 660px at 60% 100%, rgba(37, 99, 235, 0.2), transparent 62%),
+      linear-gradient(150deg, #04101c 0%, #061a2b 48%, #08243a 100%)`,
+  },
+  {
+    id: 'graphite',
+    name: '石墨',
+    background: `radial-gradient(900px 520px at 20% 0%, rgba(148, 163, 184, 0.16), transparent 60%),
+      radial-gradient(900px 600px at 80% 100%, rgba(100, 116, 139, 0.14), transparent 62%),
+      linear-gradient(150deg, #0c0f14 0%, #12161d 50%, #1a1f28 100%)`,
+  },
+  {
+    id: 'forest',
+    name: '森林',
+    background: `radial-gradient(1000px 600px at 15% 12%, rgba(34, 197, 94, 0.26), transparent 60%),
+      radial-gradient(900px 560px at 85% 26%, rgba(163, 230, 53, 0.18), transparent 62%),
+      radial-gradient(900px 640px at 48% 100%, rgba(13, 148, 136, 0.2), transparent 60%),
+      linear-gradient(150deg, #07120c 0%, #0d2016 48%, #14301f 100%)`,
+  },
+  {
+    id: 'rose',
+    name: '玫瑰',
+    background: `radial-gradient(1000px 600px at 14% 10%, rgba(244, 63, 94, 0.3), transparent 60%),
+      radial-gradient(900px 560px at 86% 24%, rgba(251, 113, 133, 0.22), transparent 62%),
+      radial-gradient(900px 640px at 52% 100%, rgba(190, 24, 93, 0.2), transparent 60%),
+      linear-gradient(150deg, #1a0710 0%, #2a0c1a 48%, #3a1124 100%)`,
+  },
+  {
+    id: 'mint',
+    name: '薄荷',
+    background: `radial-gradient(1000px 600px at 16% 8%, rgba(45, 212, 191, 0.28), transparent 60%),
+      radial-gradient(900px 560px at 84% 26%, rgba(134, 239, 172, 0.2), transparent 62%),
+      radial-gradient(900px 640px at 50% 100%, rgba(56, 189, 248, 0.18), transparent 60%),
+      linear-gradient(150deg, #04140f 0%, #08201a 48%, #0b2c26 100%)`,
+  },
+  {
+    id: 'amber',
+    name: '琥珀',
+    background: `radial-gradient(1000px 600px at 12% 14%, rgba(245, 158, 11, 0.3), transparent 60%),
+      radial-gradient(900px 560px at 88% 22%, rgba(217, 119, 6, 0.22), transparent 62%),
+      radial-gradient(900px 640px at 50% 100%, rgba(180, 83, 9, 0.2), transparent 60%),
+      linear-gradient(150deg, #1a1004 0%, #291807 48%, #37210a 100%)`,
+  },
+  {
+    id: 'sakura',
+    name: '樱花',
+    background: `radial-gradient(1000px 600px at 18% 10%, rgba(244, 114, 182, 0.28), transparent 60%),
+      radial-gradient(900px 560px at 82% 28%, rgba(196, 181, 253, 0.22), transparent 62%),
+      radial-gradient(900px 640px at 46% 100%, rgba(251, 207, 232, 0.16), transparent 60%),
+      linear-gradient(150deg, #190d16 0%, #241224 48%, #2f1733 100%)`,
+  },
+  {
+    id: 'steel',
+    name: '钢蓝',
+    background: `radial-gradient(1000px 600px at 14% 10%, rgba(96, 165, 250, 0.24), transparent 60%),
+      radial-gradient(900px 560px at 86% 24%, rgba(148, 163, 184, 0.2), transparent 62%),
+      radial-gradient(900px 640px at 50% 100%, rgba(59, 130, 246, 0.18), transparent 60%),
+      linear-gradient(150deg, #080d16 0%, #0e1622 48%, #16202f 100%)`,
+  },
+  {
+    id: 'neon',
+    name: '霓虹',
+    background: `radial-gradient(900px 560px at 16% 12%, rgba(217, 70, 239, 0.34), transparent 60%),
+      radial-gradient(900px 560px at 84% 22%, rgba(34, 211, 238, 0.3), transparent 62%),
+      radial-gradient(900px 640px at 50% 100%, rgba(99, 102, 241, 0.24), transparent 60%),
+      linear-gradient(150deg, #0b0618 0%, #150a2a 48%, #1d0f3a 100%)`,
+  },
+  {
+    id: 'sand',
+    name: '沙丘',
+    background: `radial-gradient(1000px 600px at 14% 14%, rgba(234, 179, 8, 0.22), transparent 60%),
+      radial-gradient(900px 560px at 86% 26%, rgba(168, 162, 158, 0.2), transparent 62%),
+      radial-gradient(900px 640px at 50% 100%, rgba(120, 113, 108, 0.22), transparent 60%),
+      linear-gradient(150deg, #14100a 0%, #1f1810 48%, #2b2117 100%)`,
+  },
+  {
+    id: 'ink',
+    name: '墨黑',
+    background: `radial-gradient(900px 560px at 20% 0%, rgba(59, 130, 246, 0.12), transparent 60%),
+      radial-gradient(900px 620px at 80% 100%, rgba(15, 23, 42, 0.6), transparent 62%),
+      linear-gradient(150deg, #05070b 0%, #090c12 50%, #0d1119 100%)`,
+  },
+]
+
+export function findWallpaper(id) {
+  return WALLPAPERS.find((item) => item.id === id) ?? WALLPAPERS[0]
+}
